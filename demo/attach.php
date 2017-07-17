@@ -62,6 +62,13 @@ define('CORE', dirname(__FILE__));
 define('PATH_DATA', CORE."/../data");
 
 $url = "http://imgs.jushuo.com/dimg/2017-07-14/5968903ae377c.jpg";
+$url = "https://t1.onvshen.com:85/gallery/16232/21771/s/003.jpg";
+$url = "http://imgs.jushuo.com/editor/2017-07-13/5967382f5b0a9.jpg";
+$url = "http://app.jushuo.com/static/attachment/dimg/2017-07-13/5967375d60ef7.jpg";
+$url = "http://imgs.jushuo.com/album/2017-07-14/59681ecf1b5bb.com/large/2ecb00039b0be6de723a";
+$url = "https://pic2.zhimg.com/v2-30dbeb6d1e5370fd204ae078302e6f8d_b.jpg";
+$url = "https://img.onvshen.com:85/article/10507/01.jpg";
+$url = "http://csdnimg.cn/www/images/csdn_logo_blue.gif";
 $filename = uniqid();
 $filepath = PATH_DATA."/{$filename}.jpg";
 
@@ -78,6 +85,8 @@ $header['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11
 
 $data = http($url,[],'GET',$header);
 file_put_contents($filepath,$data);
+
+
 
 
 
